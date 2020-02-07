@@ -2,6 +2,7 @@
   <div id="app">
     <h1>Swansdom</h1>
     <Quote />
+    <img src="./assets/RONSWANSON.png" />
   </div>
 </template>
 
