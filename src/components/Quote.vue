@@ -19,7 +19,8 @@ export default {
       try {
         request.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes', (error, response, body) => {
           if (!error && response.statusCode === 200) {
-            this.quote = body
+             let result = JSON.parse(body)
+             this.quote = result[0]
           }
         });
       } catch (err) {
